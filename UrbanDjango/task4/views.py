@@ -5,16 +5,16 @@ from django.shortcuts import render
 
 
 class platform(TemplateView):
-    template_name = 'platform.html'
+    template_name = 'fourth_task/platform.html'
 
 
 def games(request):
     game_names = {"games": ["Atomic Heart", "Cyberpunk 2077", "PayDay 2"], }
     return render(request,
-                  template_name='games.html',
+                  template_name='fourth_task/games.html',
                   context={'games': game_names},
                   )
 
 
 class cart(TemplateView):
-    template_name = 'cart.html'
+    template_name = 'fourth_task/cart.html'
